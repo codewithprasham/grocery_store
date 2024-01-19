@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Care - Grocery Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin-left: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("https://www.shutterstock.com/image-photo/grocery-shopping-app-bag-full-260nw-2159092617.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        nav {
+    background-color:transparent;
+    overflow: hidden;
+    position: absolute;
+    right:0;
+    width:100%;
+    top: 0;
+    height:12%;
+
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+     right:200;
+  }
+
+  nav a:hover {
+    background-color:rgba(226, 226, 226, 0.808);
+    padding:10px 16px;
+    color: black;
+  }
+  
+        
+    </style>
+</head>
+<body>
+
+    <form id="customerCareForm" onsubmit="submitForm(event)">
+        <h2>Contact Customer Care</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            // Simple form validation
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+                alert("Please fill in all fields");
+                return;
+            }
+
+            // Here, you can add additional logic to handle the form submission, like sending an email or saving to a database.
+
+            alert("Thank you for contacting us! We will get back to you soon.");
+
+            // Optional: Reset the form after submission
+            document.getElementById("customerCareForm").reset();
+        }
+    
+    </script>
+    <nav>
+        <h2><a href="login.html">LOGIN</a></h2>
+        <h2> <a href="home.html">HOME</a></h2>
+       <h2> <a href="products.php">PRODUCTS</a></h2>
+        <H2> <a href="cc.html">CUSTOMER CARE</a></H2>
+        <H2> <a href="cart.php">CART</a></H2>
+    
+       
+        </nav>
+     
+
+</body>
+</html>

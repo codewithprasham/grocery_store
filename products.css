@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  overflow: auto;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+background-color:transparent;
+overflow: hidden;
+position: absolute;
+right:0;
+width:100%;
+top: 0;
+height:12%;
+
+}
+
+
+nav a {
+float: left;
+display: block;
+color: rgb(0, 0, 0);
+text-align: center;
+padding: 10px 16px;
+text-decoration: none;
+right:200;
+}
+
+nav a:hover {
+background-color:rgba(226, 226, 226, 0.808);
+padding:10px 16px;
+color:#000000;
+border-bottom: 2PX SOLID BLACK;
+}
+h1{
+text-align: center;
+color:black;
+font-size: 30px;
+float: right;
+margin-right: 5%;
+margin-top: 0.5%;
+}
+.product-gallery {
+height: 75rem;
+margin-top: 4.5rem;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+flex-wrap: wrap;
+border-radius: 10px;
+align-items: center;
+align-self: center;
+overflow: hidden;
+}
+
+
+.products {
+height: 90%;
+width:90%;
+display:inline-flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.card {
+height:22.5%;
+width: 15%;
+background-color: rgb(0, 0, 0);
+transition: 0.3s;
+transition-timing-function: ease-in-out;
+border-radius: 20px;
+}
+
+.card:hover {
+height: 24.5%;
+width: 16%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+}
+
+.img {
+height: 55%;
+background-color: rgb(0, 0, 0);
+overflow: hidden;
+margin-top: 0.5rem;
+margin-right: 0.5rem;
+margin-left: 0.5rem;
+align-items: center;
+justify-content: center;
+display: flex;
+border-radius: 10px;
+
+}
+
+.text {
+height: 20%;
+background-color: rgb(0, 0, 0);
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+margin: 0;
+padding: 0;
+font-weight: 500;
+color:white;
+border-radius: 20px;
+}
+
+.button {
+height: 25%;
+background-color: rgb(0, 0, 0);
+justify-content: center;
+align-items: center;
+display: flex;
+flex-wrap: wrap;
+align-content: flex-start;
+
+}
+
+.button button{
+height:2rem;
+width: 8rem;
+border-radius: 10px;
+border: none;
+color: white;
+background-color:green;
+font-weight: 600;
+transition: 0.3s;
+transition-timing-function: ease-in-out;
+}
+
+.button button i {
+margin-right: 0.5rem;
+font-size: 1rem;
+}
+
+.button button:hover{
+box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);   
+}
+

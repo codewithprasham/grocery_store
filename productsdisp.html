@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PRODUCTS</title>
+    <style>
+        .main{
+            height:100%;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+          background-color:lightgreen;
+        }
+
+        nav {
+    background-color:transparent;
+    overflow: hidden;
+    position: absolute;
+    right:0;
+    width:100%;
+    top: 0;
+    height:12%;
+
+  }
+
+
+  nav a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+     right:200;
+  }
+
+  nav a:hover {
+    background-color:rgba(226, 226, 226, 0.808);
+    padding:10px 16px;
+    color:#000000;
+    border-bottom: 2PX SOLID BLACK;
+  }
+ h1{
+    text-align: center;
+    color:black;
+    font-size: 30px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 0.5%;
+  }
+  .product-gallery {
+    height: 80rem;
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.products {
+    height: 22%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    height:90%;
+    width: 15%;
+    background-color: rgb(0, 0, 0);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    border-radius: 20px;
+}
+
+.card:hover {
+    height: 92%;
+    width: 16%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.img {
+    height: 55%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+.text {
+    height: 20%;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    color:white;
+    border-radius: 20px;
+}
+
+.button {
+    height: 25%;
+    background-color: rgb(0, 0, 0);
+   justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+}
+
+.button button{
+    height:2rem;
+    width: 8rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color:green;
+    font-weight: 600;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.button button i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.button button:hover{
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);   
+}
+</style>
+</head>
+<body>
+    <div class="main">
+       
+        <nav>
+            <h2><a href="login.html">LOGIN</a></h2>
+            <h2> <a href="home.html">HOME</a></h2>
+           <h2> <a href="productsdisp.html">PRODUCTS</a></h2>
+            <H2> <a href="cc.html">CUSTOMER CARE</a></H2>
+        <h1><i class="fa-solid fa-cart-shopping"></i>NatureMart</h1>
+            </nav>
+
+            <div class="product-gallery">
+                <div class="products">
+                    <div class="card">
+                        <div class="img"> <img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/e4ecd12c-b2db-4f76-b9ea-45e0436ba350_425x425.JPG" height="150px"></div>
+                        <div class="text">TOMATOES 1kg | 40/- </div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/d7b284b9-48d8-495c-bf9a-22240984e991_425x425.jpg" style="height: 150px;"></div>
+                        <div class="text">CUCUMBER 1kg | 60/- </div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/d2997a37-3110-4772-ba27-9a7dda289e90_425x425.jpg" style="height: 150px;"></div>
+                        <div class="text">RED CAPSICUM 1kg | 150/-</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/9787e11d-5a04-4489-bbfb-8275be46910a_425x425.jpg"></div>
+                        <div class="text">GREEN PEAS 1kg| 80/-</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/0bc08d1f-7c0a-41ab-a37e-6430c69f932e_425x425.jpg" style="height: 150px;"></div>
+                        <div class="text">BROCOLLI 1kg| 200/-</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/b26f4643-5c06-4389-aa3e-797a9f1bb458_425x425.jpg"></div>
+                        <div class="text">ORANGE 1kg| 100/-</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/7fb83bef-4c1c-4f81-96e6-44c4d3eac077_425x425.jpg" style="height: 150px;"></div>
+                        <div class="text">APPLES| 200/-</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/f341c972-bc85-4b0d-8309-6bdaa4fd0cad_425x425.JPG" style="height: 150px;"></div>
+                        <div class="text">GRAPES | 100/-</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/008c2a97-74f4-4d95-bf4a-ec76afba26b8_425x425.jpg" style="height: 150px;"></div>
+                        <div class="text">Strawberries/dozen| 35 </div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/40ba4441-3b88-4f44-8590-4bc40f4562cd_425x425.jpg" style="height: 150px;"></div>
+                        <div class="text">PINAPPLE/piece |80/-</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/8154b5bb-db31-4de9-b2b1-cd87e8c75257_425x425.jpg" style="height: 150px;"></div>
+                        <div class="text">APRICOTS/kg | 850/-</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/57544300-2357-4285-8716-152eeb5ce497_425x425.jpg" style="height: 150px;;"></div>
+                        <div class="text">ALMONDS/kg | 1250</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/17658d2e-9bb9-4cc8-bd27-67b587b0d531_425x425.jpg" style="height: 150px;"></div>
+                        <div class="text">DATES/kg | 800/-</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/52c307c2-d78a-456e-8944-60e01b2b4ce5_425x425.JPG"></div>
+                        <div class="text">Cashew/kg| 1200</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="img"><img src="https://d1z88p83zuviay.cloudfront.net/ProductVariantThumbnailImages/13ebf740-b808-4e14-8814-7075f7d9167e_425x425.jpg" style="height: 150px;"></div>
+                        <div class="text">FIG/kg | 800/-</div>
+                        <div class="button"><button class="addcart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button></div>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+</body>
+</html>
